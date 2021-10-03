@@ -80,3 +80,15 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+function myFunction(){
+  var c = document.getElementById("myText").value;
+  document.getElementById("sar").innerHTML = c;
+
+  let months = c;
+
+  document.querySelector("myFunction").addEventListener("click", () => {
+    date.setMonth(date.getMonth(c));
+    renderCalendar();
+  });
+}
