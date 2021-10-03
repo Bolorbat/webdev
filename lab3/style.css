@@ -65,18 +65,9 @@ li{
     font-size: 2.5rem;
     cursor: pointer;
 }
-.prev-month,
-.prev-month~li{
-	opacity: 0.5;
-}
-.first-day,
-.first-day~li{
-	opacity: 1 !important;
-	font-weight: 900;
-}
-.last-day~li{
-	opacity: .5 !important;
-	font-weight: 200;
+.prev-date,
+.next-date {
+  opacity: 0.5;
 }
 @media all and (max-width: 950px) {
     section time.blank { display: none; }
