@@ -11,8 +11,6 @@ main{
     max-width: max-content;
     margin: 3em auto 0 auto;
     padding: 1.5em;
-    border: 2px solid var(--blue-grey-200);
-    border-radius: 8px;
 }
 .month{
     text-align: center;
@@ -33,7 +31,6 @@ main{
 .week{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    flex-direction: column;
     font-size: large;
 }
 ul{
@@ -91,43 +88,35 @@ input[type=text], select {
   button:hover {
     background-color: #45a049;
   }
-  @media only screen and (max-width: 1366px) {
-	.calendar-month,
-	.calendar-week,
-	.calendar-days{
-		max-width: 1200px;
-	}
+@media screen and (max-width: 720px) {
+    .week li, .days li{
+        width: 13.1%;
+    }
+    .month{
+       font-size: medium;
+    }   
 }
-@media only screen and (max-width: 768px) {
-	.calendar-month>h1 {
-		font-size: 40px;
-	}
-	.calendar-week>ul>li {
-		margin: 0 5px;
-	}
+@media screen and (max-width: 425px) {
+    .week li, .days li{
+        width: 12.5%;
+    }   
+    .month{
+        font-size: medium;
+     }   
+     li{
+         padding: 3px;
+     }
 }
-@media only screen and (max-width: 425px) {
-	.calendar {
-		padding: 10px 20px;
-	}
-	.calendar>h1 {
-		width: 100%;
-		text-align: center;
-	}
-	.calendar-week>ul {
-		width: 100%;
-		margin: 10px 0 0;
-		text-align: center;
-	}
-	.calendar-week>ul>li> {
-		font-size: 14px;
-	}
-	.calendar-days>ul {
-		width: 100%;
-		margin: 10px 0 0;
-		text-align: center;
-	}
-	.calendar-days>ul>li> {
-		font-size: 14px;
-	}
+@media screen and (max-width: 320px) {
+    .week li, .days li{
+        width: 12.2%;
+        font-size: small;
+    }  
+    .month{
+        font-size: x-small;
+        align-items: flex-start;
+     }    
+     .days li:hover{
+         border: 0.1rem solid #fe623e;
+     }
 }
