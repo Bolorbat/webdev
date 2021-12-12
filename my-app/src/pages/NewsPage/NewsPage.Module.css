@@ -1,0 +1,67 @@
+.container_a{
+    background-color: white;
+}
+.header_a{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Roboto Condensed",sans-serif;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-bottom: 1px black solid;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.p,
+.ul, li
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.img{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.small{
+    color: #3fb9ee;
+    font-size: 15px;
+    line-height: 25px
+}
+.p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.img_a{
+    transition: 2s;
+    background-image: url(https://www.yolo.mn/stat/app/img/catheader.png);
+    background-repeat: no-repeat;
+    font-family: MAKChoc;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 75px;
+    float: left;
+    margin: 0;
+    padding-right: 40px;
+    background-position: 65px ;
+    margin-left: 0;
+    margin-right: 0;
+}
+.header{
+    height: 36px;
+    margin-bottom: 15px;
+    margin-top: 3%;
+    background-color: white;
+}
+.container{
+    background-color: white;
+    margin-left: 12%;
+    margin-right: 10%;
+}

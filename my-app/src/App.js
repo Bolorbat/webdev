@@ -1,27 +1,27 @@
 import {Route, Switch} from 'react-router-dom';
 
-import AllMeetupsPage from './pages/Allmeetups';
-import NewMeetup from './pages/NewMeetups';
-import Favourite from './pages/Favourite';
+import HomePage from './pages/HomePage/Homepage'; 
+import SubPage from './pages/SubPage/SubPage';
+import NewsPage from './pages/NewsPage/NewsPage'
+import Newyear from './components/New year/New_year'
+import Drawernav from './components/Drawer/Drawer_nav';
 
-
-import MainNavigation from './layout/MainNavigation';
+import MainNavigation from './Header/MainNavigation';
 function App() {
   return (
     <div>
       <MainNavigation/>
+      <Newyear/>
+      <Drawernav/>
       <Switch>
         <Route path='/' exact={true}>
-          <AllMeetupsPage/>
+          <HomePage/>
         </Route>
-        <Route path='/new-meetup'>
-
-          <button>
-              <NewMeetup/>
-          </button>
+        <Route path='/news'>
+          <NewsPage/>
         </Route>
-        <Route path='/favourite'>
-          <Favourite/>
+        <Route path='/sub'>
+          <SubPage/>
         </Route>
       </Switch>    
     </div>
