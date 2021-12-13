@@ -19,6 +19,7 @@
         'https://www.yolo.mn/stat/app/img/redheart.png',
         vemoji:
           'https://www.yolo.mn/stat/app/img/eye.png',
+          
     },
     {
       id: 'm2',

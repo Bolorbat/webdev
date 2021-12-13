@@ -4,7 +4,19 @@ import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@material-ui/core/IconButton';
 import LoginIcon from '@mui/icons-material/Login';
 import CardMedia from '@mui/material/CardMedia';
-    
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+  
+const LightTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: theme.palette.common.white,
+      color: 'rgba(0, 0, 0, 0.87)',
+      boxShadow: theme.shadows[1],
+      fontSize: 11,
+    },
+  }));
 function MainNavigation(){
     return <header className={classes.header}>
         <div className={classes.logo}>
@@ -19,7 +31,9 @@ function MainNavigation(){
         <nav>
             <ul>    
                 <li>
+                    <LightTooltip title="Оддын тухай" className={classes.header}>
                     <Link to='/sub' style={{ textDecoration: 'none' }}>Энтертайнмент</Link>
+                    </LightTooltip>
                 </li>
                 <li> 
                     <Link to='/sub' style={{ textDecoration: 'none' }}>Боловсрол</Link>

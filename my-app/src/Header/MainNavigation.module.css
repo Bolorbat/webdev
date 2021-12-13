@@ -70,3 +70,15 @@
     margin-bottom: 0;
     list-style: none;
   }
+  @media only screen and(max-width: 767px){
+    .header{
+      margin-left: -15px;
+      margin-right: -15px;
+      display: table;
+      content: "";
+    }
+  }
+    
+    
+    
+  

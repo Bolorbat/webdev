@@ -108,3 +108,40 @@
         margin-left: 12%;
         margin-right: 10%;
     }
+    @media only screen and(max-width: 474px){
+        .container {
+        height: 160px !important;
+    }
+    }
+    
+    @media only screen and(max-width: 551px){
+        .container {
+    height: 200px !important;
+}
+    }
+    
+@media only screen and (max-width: 651px){
+    .container {
+    height: 250px !important;
+}
+}
+
+
+@media only screen and(max-width: 750px){
+.container {
+    height: 300px !important;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+.DATA.image{
+    width: auto;
+    height: auto;
+}
+}
