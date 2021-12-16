@@ -1,5 +1,4 @@
 
-
     const DATA = [
     {
       id: 'm1',
@@ -97,6 +96,26 @@
         vemoji:
           'https://www.yolo.mn/stat/app/img/eye.png',
       },
+      {
+        id: 'm6',
+        title: '“Spider-Man: No Way Home” кино шүүмжлэгчдээс ӨНДӨР үнэлгээ авч байна',
+        image:
+          'https://www.yolo.mn/img/content_image/cover_image/161220211639619537_360135.jpeg',
+        category: 'Кино урлаг',
+        description:
+          'Энэ жилийн хувьд үзэгчдийн дунд хамгийн өндөр хүлээлт үүсгээд буй дэлгэцийн уран бүтээлүүдийн нэгт “Spider-Man: No Way H...',
+          liked:
+        '13',
+      watched:
+        '2',
+      when:
+        'Өнөөдөр',
+        hearth:
+        'https://www.yolo.mn/stat/app/img/redheart.png',
+        vemoji:
+          'https://www.yolo.mn/stat/app/img/eye.png',
+
+      }
   ];
 
 export default DATA;

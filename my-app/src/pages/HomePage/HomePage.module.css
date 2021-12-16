@@ -9,6 +9,8 @@
     border-left: 4px solid #F8E71C;
     padding-left: 10px; 
     flex-direction: row;
+    color: black;
+    margin-left: 1%;
     }
     .arrow{
         border: 1px solid #000000;
@@ -17,7 +19,13 @@
         padding: 3px 6px;
         position: relative;
         margin: 0;
+        background-color: white;
         
+    }
+    .arrow:hover{
+        background-color: #000000;
+        color: white;
+        transition: 1s;
     }
     .img{
         background-size: cover !important;
@@ -32,9 +40,7 @@
         width: 100px;
         height: 100px;
     }
-    .container{
-        text-decoration: none;
-    }
+    
     .nav{
         float: right;
         width: 100%;
@@ -70,6 +76,7 @@
     cursor: pointer;
     margin-left: 0;
     margin-right: 0;
+    color: black;
     }
     .p:hover{
         border-left: 5px solid #F8E71C;
@@ -86,8 +93,10 @@
         margin-left: 0;
     }
     .simage{
+        display: flex;
         width: 100%;
         height: auto;
+        justify-content: space-between;
     }
     .row{
         display: flex;
@@ -95,6 +104,7 @@
         margin: 0 55%;
         margin-top: 3%;
         margin-left: 0;
+        width: 50%;
     }
     .sp{
         text-decoration: none;
@@ -107,41 +117,54 @@
         background-color: white;
         margin-left: 12%;
         margin-right: 10%;
+        text-decoration: none;
+        
     }
-    @media only screen and(max-width: 474px){
-        .container {
-        height: 160px !important;
+    @media (min-width:1200px) and(max-width: 1440px){
+        .container{
+            margin-left: 12%;    
+            margin-right: 12%;
+            border-radius: 0;
+           
+      } 
     }
+    @media (max-width: 1024px){
+        .container{
+            margin-left: 2%;    
+            margin-right: 2%;
+            border-radius: 0;
+    }
+    .nav{
+        width: auto;
+        display: flex;
+        float: left;
+        
+    }
+    .p_nav{
+        margin-right: 0;
+       float: left;
+        flex-direction: column;
+        width: 100% ;
+    }
+};
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        margin-left: 2%;    
+        margin-right: 2%;
+        border-radius: 0;
+}
+}
+    
+@media (max-width:767px){
+    .container{
+        width: 100%;
+    }
+    .image{
+        width: 400px;
+        height:300px;
     }
     
-    @media only screen and(max-width: 551px){
-        .container {
-    height: 200px !important;
 }
-    }
     
-@media only screen and (max-width: 651px){
-    .container {
-    height: 250px !important;
-}
-}
 
 
-@media only screen and(max-width: 750px){
-.container {
-    height: 300px !important;
-}
-.nav-tabs>li {
-    float: left;
-    margin-bottom: -1px;
-}
-
-.nav>li {
-    position: relative;
-    display: block;
-}
-.DATA.image{
-    width: auto;
-    height: auto;
-}
-}

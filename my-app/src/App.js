@@ -5,6 +5,7 @@ import SubPage from './pages/SubPage/SubPage';
 import NewsPage from './pages/NewsPage/NewsPage'
 import Newyear from './components/New year/New_year'
 import Drawernav from './components/Drawer/Drawer_nav';
+import Spider from './pages/NewsPage/Spider'
 
 import MainNavigation from './Header/MainNavigation';
 function App() {
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path='/news'>
           <NewsPage/>
+        </Route>
+        <Route path='/spider'>
+            <Spider/>
         </Route>
         <Route path='/sub'>
           <SubPage/>
